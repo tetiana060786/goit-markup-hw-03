@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 body {
 font-family: 'Roboto', sans-serif; 
 background-color: var(--white-color);
@@ -54,18 +61,8 @@ color: var(--iris-color);
     letter-spacing: 0.02em;
     color:var(--slate-color);
   }
-.header-address {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color:var(--slate-color);
-}
 .hov:hover{
   color:var(--ocean-color);
-}
-.header-address:hover{
-  color:var(--iris-color);
 }
 .hero-section{
   background-color:var(--nblue-color);
@@ -79,6 +76,7 @@ letter-spacing: 0.02em;
 color:var(--white-color);
 }
 .hero-section-btn {
+  font-family: inherit; 
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -119,7 +117,7 @@ background-color: var(--ocean-color);
 .our-team {
 font-weight: 700;
 font-size: 36px;
-line-height: 1.11
+line-height: 1.11;
 letter-spacing 0.02em;
 color: var(--nblue-color);
 }
@@ -162,6 +160,7 @@ color: var(--nblue-color);
 /* file Portfolio*/
 
 .main-section-btn {
+font-family: inherit;  
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -188,7 +187,44 @@ color:var(--nblue-color);
   color:var(--slate-color);
   }
 
+/* коригування*/
 
+.visually-hidden {
+  position: absolute;
+  top: -150%;
+  z-index: -100;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  user-select: none;
+  pointer-events: none;
+  cursor: none;
+  white-space: nowrap;
+}
+.cursor {
+  cursor:pointer
+}
+.color-mail {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--slate-color);
+  }
+  .color-mail:hover {
+    color:var(--iris-color);
+  }
+.color-tel {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--slate-color);
+  }
+  .color-tel:hover {
+    color:var(--iris-color);
+  }
 
 
 
